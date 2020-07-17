@@ -120,7 +120,7 @@ return (
             placeholder = "Email"
         />
         {errors.email.length > 0 ? (
-            <p className="error">{errors.email}</p>) : null}
+            <p data-cy="email-error-msg" className="error">{errors.email}</p>) : null}
         </label>
         <label htmlFor= "passwordInput">
             Password
@@ -136,7 +136,7 @@ return (
         </label>
         <label htmlFor = "role">
             What is your current role?
-            <select value = {formState.role} name = "role" onChange = {inputChange}>
+            <select id="roles" value = {formState.role} name = "role" onChange = {inputChange}>
                 <option value = "Teacher">Teacher</option>
                 <option value = "Animator">Animator</option>
                 <option value = "Software Engineer">Software Engineer</option>
@@ -157,7 +157,7 @@ return (
                 <p className="error">{errors.terms}</p> ) : null}        
         </label>
         <pre>{JSON.stringify(post, null, 2)}</pre>
-        <button disabled={buttonDisabled}>Submit</button>
+        <button id="submit" disabled={buttonDisabled}>Submit</button>
     </form>
     )
 }
