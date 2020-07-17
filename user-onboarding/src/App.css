@@ -1,0 +1,107 @@
+html {
+  font-size: 62.5%;
+  background-color: slategray;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem 0; 
+  font-size: 1.4rem;
+}
+
+input,
+select, 
+textarea {
+  width: 100%;
+  margin: .5rem 00; 
+  display: block; 
+  width: 100%;
+  border: .2rem solid black;
+  border-radius: .5rem;
+  padding: 1rem;
+  transition: all 0.3s;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  background-color: white;
+}
+
+select {
+  height: 4rem;
+  width: 32.5rem;
+}
+
+select:focus {
+  outline: none;
+  border-color: purple;
+}
+
+input:focus {
+  outline: none;
+  border-color: purple;
+}
+
+input:placeholder {
+  color: black;
+}
+
+button {
+  width: 15rem;
+  display: inline-block;
+  padding: .8rem 1.1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: .5rem;
+  letter-spacing: .2rem;
+  outline: none;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 .5rem 1rem black (0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: green;
+  box-shadow: 0 .5rem 1.2rem black (0, 0, 0, 0.3);
+}
+
+button:disabled {
+  background-image: none;
+  background-color: lightgray;
+  border: .1rem solid black;
+  color: black;
+  cursor: not-allowed;
+}
+
+.error {
+  font-size: 1.2 rem;
+  color: red;
+}
+
+.terms {
+  display: inline-block;
+  align-self: self-starts; 
+}
+
+.terms input {
+  width: 1.5rem; 
+  display: inline-block;
+  margin-right: .5rem;
+  color: black;
+  margin-bottom: 1rem;
+}
